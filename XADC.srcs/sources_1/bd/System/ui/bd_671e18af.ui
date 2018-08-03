@@ -1,0 +1,188 @@
+{
+   da_ps7_cnt: "1",
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port AC_RECLRC -pg 1 -y 1470 -defaultsOSRD
+preplace port DDR -pg 1 -y 970 -defaultsOSRD
+preplace port AC_MCLK -pg 1 -y 1380 -defaultsOSRD
+preplace port AC_MUTEN -pg 1 -y 1510 -defaultsOSRD
+preplace port AC_RECDAT -pg 1 -y 1530 -defaultsOSRD
+preplace port AC_PBLRC -pg 1 -y 1450 -defaultsOSRD
+preplace port vauxp14 -pg 1 -y 1830 -defaultsOSRD
+preplace port IIC_0 -pg 1 -y 1010 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 990 -defaultsOSRD
+preplace port vauxn14 -pg 1 -y 1810 -defaultsOSRD
+preplace port AC_BCLK -pg 1 -y 1430 -defaultsOSRD
+preplace port AC_PBDAT -pg 1 -y 1490 -defaultsOSRD
+preplace port GPIO -pg 1 -y 1360 -defaultsOSRD
+preplace portBus keyIN -pg 1 -y 270 -defaultsOSRD
+preplace portBus lcdOut -pg 1 -y 720 -defaultsOSRD
+preplace portBus keyOUT -pg 1 -y 420 -defaultsOSRD
+preplace portBus led_tri_o -pg 1 -y 1550 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 5 -y 910 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 1020 -defaultsOSRD
+preplace inst xlslice_8 -pg 1 -lvl 4 -y 1310 -defaultsOSRD
+preplace inst ac_interface_0 -pg 1 -lvl 16 -y 1490 -defaultsOSRD
+preplace inst xlslice_9 -pg 1 -lvl 7 -y 710 -defaultsOSRD
+preplace inst cordic_0 -pg 1 -lvl 13 -y 300 -defaultsOSRD
+preplace inst xlslice_10 -pg 1 -lvl 10 -y 240 -defaultsOSRD -orient R180
+preplace inst xlslice_11 -pg 1 -lvl 9 -y 650 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst xlslice_12 -pg 1 -lvl 4 -y 790 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 4 -y 510 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -y 1060 -defaultsOSRD
+preplace inst xlslice_13 -pg 1 -lvl 6 -y 1140 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 5 -y 1110 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 15 -y 1080 -defaultsOSRD
+preplace inst xlslice_14 -pg 1 -lvl 4 -y 1880 -defaultsOSRD
+preplace inst xlslice_15 -pg 1 -lvl 10 -y 340 -defaultsOSRD -orient R180
+preplace inst xlslice_16 -pg 1 -lvl 4 -y 680 -defaultsOSRD
+preplace inst mult_gen_0 -pg 1 -lvl 16 -y 530 -defaultsOSRD
+preplace inst xlslice_17 -pg 1 -lvl 11 -y 500 -defaultsOSRD
+preplace inst mult_gen_1 -pg 1 -lvl 7 -y 1640 -defaultsOSRD
+preplace inst mult_gen_2 -pg 1 -lvl 7 -y 510 -defaultsOSRD
+preplace inst xlslice_18 -pg 1 -lvl 11 -y 650 -defaultsOSRD
+preplace inst mult_gen_3 -pg 1 -lvl 10 -y 500 -defaultsOSRD
+preplace inst mult_gen_4 -pg 1 -lvl 10 -y 650 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -y 1340 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 2 -y 770 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 2 -y 330 -defaultsOSRD
+preplace inst cmpy_0 -pg 1 -lvl 8 -y 280 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 1120 -defaultsOSRD
+preplace inst delayz1z2_0 -pg 1 -lvl 14 -y 1080 -defaultsOSRD
+preplace inst xlslice_21 -pg 1 -lvl 11 -y 50 -defaultsOSRD -orient R180
+preplace inst axi_gpio_5 -pg 1 -lvl 2 -y 900 -defaultsOSRD
+preplace inst axi_gpio_6 -pg 1 -lvl 15 -y 430 -defaultsOSRD
+preplace inst axi_gpio_7 -pg 1 -lvl 2 -y 630 -defaultsOSRD
+preplace inst switch_port_0 -pg 1 -lvl 16 -y 830 -defaultsOSRD
+preplace inst switch_port_1 -pg 1 -lvl 14 -y 110 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 9 -y 880 -defaultsOSRD
+preplace inst switch_port_2 -pg 1 -lvl 8 -y 800 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 7 -y 900 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 8 -y 1560 -defaultsOSRD
+preplace inst xadc_channel_14_0 -pg 1 -lvl 5 -y 1850 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 10 -y 90 -defaultsOSRD
+preplace inst switch_port_3 -pg 1 -lvl 6 -y 1850 -defaultsOSRD
+preplace inst xlconcat_3 -pg 1 -lvl 7 -y 1420 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 5 -y 450 -defaultsOSRD
+preplace inst xlconcat_4 -pg 1 -lvl 12 -y 350 -defaultsOSRD
+preplace inst xlconcat_5 -pg 1 -lvl 3 -y 170 -defaultsOSRD -orient R180
+preplace inst xlconcat_6 -pg 1 -lvl 13 -y 660 -defaultsOSRD
+preplace inst axi_fifo_mm_s_0 -pg 1 -lvl 1 -y 130 -defaultsOSRD
+preplace inst xlconcat_7 -pg 1 -lvl 5 -y 1500 -defaultsOSRD -orient R180
+preplace inst xlconstant_0 -pg 1 -lvl 5 -y 1300 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 16 -y 670 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -y 1480 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -y 1190 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 12 -y 650 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 14 -y 260 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 5 -y 1710 -defaultsOSRD
+preplace inst cic_compiler_0 -pg 1 -lvl 15 -y 220 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 7 -y 1070 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 4 -y 890 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 1 -y 540 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 14 -y 360 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 5 -y 1620 -defaultsOSRD
+preplace netloc xlslice_11_Dout 1 9 1 3990
+preplace netloc axi_gpio_6_gpio_io_o 1 15 2 N 420 NJ
+preplace netloc xlslice_2_Dout 1 13 2 5360 1020 5640
+preplace netloc fir_compiler_1_m_axis_data_tdata 1 3 5 1330 740 NJ 740 NJ 740 NJ 780 3270
+preplace netloc AC_RECDAT_1 1 0 16 NJ 1530 NJ 1530 NJ 1530 NJ 1530 NJ 1430 NJ 1680 NJ 1530 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 6170
+preplace netloc processing_system7_0_axi_periph_M08_AXI 1 1 1 630
+preplace netloc xlslice_17_Dout 1 11 1 4630
+preplace netloc processing_system7_0_FIXED_IO 1 1 16 N 990 NJ 990 NJ 950 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ
+preplace netloc fir_compiler_0_m_axis_data_tdata 1 10 1 4430
+preplace netloc xlconcat_6_dout 1 13 1 5340
+preplace netloc xlconcat_2_dout 1 7 2 3300 1490 3730
+preplace netloc xlconstant_3_dout 1 5 1 2580
+preplace netloc switch_port_0_data_out 1 13 4 5360 620 NJ 620 NJ 620 6500
+preplace netloc vauxn14_1 1 0 5 NJ 1810 NJ 1810 NJ 1810 NJ 1810 2020
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 4 3 2090 1250 NJ 1640 NJ
+preplace netloc mult_gen_2_P 1 6 2 3040 580 3240
+preplace netloc xlslice_16_Dout 1 4 3 NJ 680 NJ 680 2980
+preplace netloc cmpy_0_m_axis_dout_tdata 1 8 2 3770 80 NJ
+preplace netloc xlconcat_0_dout 1 7 3 3290 710 NJ 810 3990
+preplace netloc axi_gpio_3_gpio_io_o 1 2 2 1060 500 NJ
+preplace netloc xlslice_3_Dout 1 3 11 1380 980 NJ 1020 NJ 1020 NJ 1020 3260 1070 NJ 1070 NJ 1070 NJ 1070 NJ 1070 NJ 1070 N
+preplace netloc xlslice_10_Dout 1 9 1 3990
+preplace netloc mult_gen_0_P 1 15 2 6160 610 6490
+preplace netloc ac_interface_0_AC_LRCLK 1 16 1 6500
+preplace netloc axi_gpio_0_GPIO 1 2 15 N 1330 NJ 1360 NJ 1360 NJ 1660 NJ 1350 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 1 1 560
+preplace netloc xlslice_12_Dout 1 4 4 NJ 790 NJ 790 NJ 790 N
+preplace netloc processing_system7_0_DDR 1 1 16 N 970 NJ 970 NJ 940 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ 970 NJ
+preplace netloc c_counter_binary_0_Q 1 5 2 2660 1070 NJ
+preplace netloc xlslice_5_Dout 1 2 15 1030 1540 NJ 1540 NJ 1440 NJ 1690 NJ 1540 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1510 6160 910 6490
+preplace netloc axi_gpio_7_gpio2_io_o 1 2 15 NJ 660 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 580 NJ 580 NJ 580 NJ 580 NJ 600 NJ 600 NJ 600 NJ 600 6510
+preplace netloc ac_interface_0_AC_MUTEN 1 16 1 N
+preplace netloc vauxp14_1 1 0 5 NJ 1830 NJ 1830 NJ 1830 NJ 1830 2010
+preplace netloc xlconstant_1_dout 1 2 13 NJ 1480 1300 430 2130 530 NJ 530 NJ 440 3240 170 NJ 170 3970 170 NJ 170 NJ 170 4870 170 NJ 30 NJ
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 1 1 590
+preplace netloc xlslice_21_Dout 1 3 8 1380 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ
+preplace netloc xlslice_7_Dout 1 5 4 N 910 NJ 840 NJ 890 NJ
+preplace netloc xlslice_4_Dout 1 4 12 2030 820 NJ 820 NJ 820 NJ 720 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 570
+preplace netloc xlslice_1_Dout 1 4 12 NJ 1190 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ 1200 NJ 1200 6140
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 1 1 570
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 1 1 580
+preplace netloc xlconcat_4_dout 1 12 1 4860
+preplace netloc processing_system7_0_axi_periph_M07_AXI 1 1 14 NJ 550 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 5680
+preplace netloc xlconcat_7_dout 1 4 1 2140
+preplace netloc mult_gen_1_P 1 5 3 2590 1710 NJ 1710 3240
+preplace netloc xadc_channel_14_0_adc 1 2 11 NJ 590 NJ 590 NJ 590 NJ 590 2990 660 NJ 660 NJ 720 NJ 720 NJ 720 NJ 720 NJ
+preplace netloc c_addsub_0_S 1 15 1 6150
+preplace netloc axi_gpio_0_ip2intc_irpt 1 0 3 180 1270 NJ 1270 1010
+preplace netloc xadc_channel_14_0_adc1 1 5 1 2570
+preplace netloc axi_gpio_4_gpio2_io_o 1 2 2 1050 1190 NJ
+preplace netloc ac_interface_0_led 1 16 1 N
+preplace netloc xlconstant_2_dout 1 12 1 N
+preplace netloc processing_system7_0_IIC_0 1 1 16 N 1010 NJ 1010 NJ 960 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1010 NJ 1010 NJ
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 0 2 170 260 560
+preplace netloc xlslice_6_Dout 1 5 3 2600 1670 NJ 1360 NJ
+preplace netloc fir_compiler_1_m_axis_data_tdata1 1 5 2 NJ 460 3040
+preplace netloc cic_compiler_0_m_axis_data_tdata 1 15 1 6140
+preplace netloc dds_compiler_1_m_axis_data_tdata 1 4 1 2070
+preplace netloc xlslice_8_Dout 1 4 10 NJ 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1240 NJ 1240 5330
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 16 150 820 610 1020 NJ 1020 1360 990 2110 1230 2630 1700 3010 830 3260 480 NJ 480 3980 290 NJ 290 NJ 290 4850 380 5320 410 5670 830 6130
+preplace netloc mult_gen_4_P 1 10 1 N
+preplace netloc keyIN_1 1 0 16 NJ 240 NJ 410 NJ 410 NJ 410 NJ 370 NJ 370 NJ 370 NJ 390 NJ 390 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 510 6120
+preplace netloc cordic_0_m_axis_dout_tdata 1 13 1 5350
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 0 3 170 1210 NJ 1210 1010
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 1 1 N
+preplace netloc axi_gpio_7_gpio_io_o 1 2 7 NJ 620 1280 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc switch_port_1_data_out 1 14 1 5640
+preplace netloc axi_gpio_5_gpio_io_o 1 2 2 NJ 910 1330
+preplace netloc xlslice_14_Dout 1 4 2 2090 1780 NJ
+preplace netloc axi_gpio_4_gpio_io_o 1 2 2 1060 300 NJ
+preplace netloc xlslice_15_Dout 1 9 1 4000
+preplace netloc delayz1z2_0_data_out_1 1 14 1 5640
+preplace netloc xlconcat_3_dout 1 7 2 3300 1500 3740
+preplace netloc clk_wiz_0_clk_out1 1 4 1 2030
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 2 160 1120 560
+preplace netloc xlslice_9_Dout 1 6 2 3040 760 3240
+preplace netloc delayz1z2_0_data_out_2 1 14 1 5690
+preplace netloc clk_wiz_0_clk_out2 1 4 13 NJ 1160 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 6120 1380 NJ
+preplace netloc axi_fifo_mm_s_0_AXI_STR_TXC 1 0 2 140 30 570
+preplace netloc xlslice_13_Dout 1 3 4 1370 1130 NJ 1060 NJ 1090 2970
+preplace netloc xlconstant_0_dout 1 5 2 2650 1650 3000
+preplace netloc clk_wiz_0_clk_out3 1 4 1 2040
+preplace netloc ac_interface_0_AC_BCLK 1 16 1 N
+preplace netloc mult_gen_3_P 1 10 1 N
+preplace netloc xlslice_5_Dout1 1 14 2 5690 840 NJ
+preplace netloc xlconcat_3_dout1 1 7 1 3290
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 1 1 600
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 16 180 250 620 1030 1020 1070 1350 970 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 5650 1500 NJ
+preplace netloc xlconcat_5_dout 1 2 1 N
+preplace netloc xlslice_18_Dout 1 11 1 4640
+preplace netloc ac_interface_0_AC_PBDAT 1 16 1 N
+levelinfo -pg 1 120 370 840 1180 1800 2360 2840 3140 3530 3870 4220 4530 4750 5090 5510 5910 6340 6530
+",
+   }
+{
+   da_axi4_cnt: "4",
+}
+{
+   da_axi4_cnt: "15",
+}

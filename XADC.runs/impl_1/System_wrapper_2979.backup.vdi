@@ -1,0 +1,759 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Feb 27 20:04:41 2017
+# Process ID: 12753
+# Log file: /home/rd/vivado-outputs/XADC_3_DEM/XADC.runs/impl_1/System_wrapper.vdi
+# Journal file: /home/rd/vivado-outputs/XADC_3_DEM/XADC.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/opt/Xilinx/Vivado/2014.4/scripts/init.tcl'
+source -notrace "/opt/Xilinx/Vivado/2014.4/scripts/init.tcl"
+source System_wrapper.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at /opt/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at /opt/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at /opt/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at /opt/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at /opt/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at /opt/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 1294 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2014.4/data/./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc] for cell 'System_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc] for cell 'System_i/processing_system7_0/inst'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_rst_processing_system7_0_100M_0/System_rst_processing_system7_0_100M_0_board.xdc] for cell 'System_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_rst_processing_system7_0_100M_0/System_rst_processing_system7_0_100M_0_board.xdc] for cell 'System_i/rst_processing_system7_0_100M'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_rst_processing_system7_0_100M_0/System_rst_processing_system7_0_100M_0.xdc] for cell 'System_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_rst_processing_system7_0_100M_0/System_rst_processing_system7_0_100M_0.xdc] for cell 'System_i/rst_processing_system7_0_100M'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_board.xdc] for cell 'System_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_board.xdc] for cell 'System_i/axi_gpio_0/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xdc] for cell 'System_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xdc] for cell 'System_i/axi_gpio_0/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_1_0/System_axi_gpio_1_0_board.xdc] for cell 'System_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_1_0/System_axi_gpio_1_0_board.xdc] for cell 'System_i/axi_gpio_1/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_1_0/System_axi_gpio_1_0.xdc] for cell 'System_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_1_0/System_axi_gpio_1_0.xdc] for cell 'System_i/axi_gpio_1/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_3_0/System_axi_gpio_3_0_board.xdc] for cell 'System_i/axi_gpio_3/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_3_0/System_axi_gpio_3_0_board.xdc] for cell 'System_i/axi_gpio_3/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_3_0/System_axi_gpio_3_0.xdc] for cell 'System_i/axi_gpio_3/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_3_0/System_axi_gpio_3_0.xdc] for cell 'System_i/axi_gpio_3/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_2_0/System_axi_gpio_2_0_board.xdc] for cell 'System_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_2_0/System_axi_gpio_2_0_board.xdc] for cell 'System_i/axi_gpio_2/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_2_0/System_axi_gpio_2_0.xdc] for cell 'System_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_2_0/System_axi_gpio_2_0.xdc] for cell 'System_i/axi_gpio_2/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_4_0/System_axi_gpio_4_0_board.xdc] for cell 'System_i/axi_gpio_4/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_4_0/System_axi_gpio_4_0_board.xdc] for cell 'System_i/axi_gpio_4/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_4_0/System_axi_gpio_4_0.xdc] for cell 'System_i/axi_gpio_4/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_4_0/System_axi_gpio_4_0.xdc] for cell 'System_i/axi_gpio_4/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_5_0/System_axi_gpio_5_0_board.xdc] for cell 'System_i/axi_gpio_5/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_5_0/System_axi_gpio_5_0_board.xdc] for cell 'System_i/axi_gpio_5/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_5_0/System_axi_gpio_5_0.xdc] for cell 'System_i/axi_gpio_5/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_5_0/System_axi_gpio_5_0.xdc] for cell 'System_i/axi_gpio_5/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/ipshared/TD/xadc_ch14_bipol_v1_3/92a3b9cb/constrs_1/imports/Vivado/ZYBO_Master.xdc] for cell 'System_i/xadc_channel_14_0/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/ipshared/TD/xadc_ch14_bipol_v1_3/92a3b9cb/constrs_1/imports/Vivado/ZYBO_Master.xdc] for cell 'System_i/xadc_channel_14_0/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_clk_wiz_0_0/System_clk_wiz_0_0_board.xdc] for cell 'System_i/clk_wiz_0/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_clk_wiz_0_0/System_clk_wiz_0_0_board.xdc] for cell 'System_i/clk_wiz_0/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_clk_wiz_0_0/System_clk_wiz_0_0.xdc] for cell 'System_i/clk_wiz_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_clk_wiz_0_0/System_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_clk_wiz_0_0/System_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:36 ; elapsed = 00:00:57 . Memory (MB): peak = 1075.570 ; gain = 292.574 ; free physical = 128 ; free virtual = 0
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_clk_wiz_0_0/System_clk_wiz_0_0.xdc] for cell 'System_i/clk_wiz_0/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_6_0/System_axi_gpio_6_0_board.xdc] for cell 'System_i/axi_gpio_6/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_6_0/System_axi_gpio_6_0_board.xdc] for cell 'System_i/axi_gpio_6/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_6_0/System_axi_gpio_6_0.xdc] for cell 'System_i/axi_gpio_6/U0'
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/sources_1/bd/System/ip/System_axi_gpio_6_0/System_axi_gpio_6_0.xdc] for cell 'System_i/axi_gpio_6/U0'
+Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc]
+WARNING: [Vivado 12-584] No ports matched 'keyIN[0]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[3]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[1]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[1]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[2]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[2]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[3]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[3]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[4]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyIN[4]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[0]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[0]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[1]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[1]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[2]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[2]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[3]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'keyOUT[3]'. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [/home/rd/vivado-outputs/XADC_3_DEM/XADC.srcs/constrs_1/new/System.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 14 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 2 instances
+
+link_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:49 . Memory (MB): peak = 1075.570 ; gain = 492.109 ; free physical = 126 ; free virtual = 0
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:02 . Memory (MB): peak = 1077.570 ; gain = 2.000 ; free physical = 119 ; free virtual = 0
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 83 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 178ba09b5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1080.570 ; gain = 0.000 ; free physical = 147 ; free virtual = 0
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 594 cells.
+Phase 2 Constant Propagation | Checksum: 105b89758
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1080.570 ; gain = 0.000 ; free physical = 116 ; free virtual = 0
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 6348 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 1137 unconnected cells.
+Phase 3 Sweep | Checksum: e817d896
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.570 ; gain = 0.000 ; free physical = 128 ; free virtual = 0
+Ending Logic Optimization Task | Checksum: e817d896
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1080.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 0
+Implement Debug Cores | Checksum: f208a74a
+Logic Optimization | Checksum: f208a74a
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 12 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 24
+Ending PowerOpt Patch Enables Task | Checksum: e817d896
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1081.574 ; gain = 0.000 ; free physical = 115 ; free virtual = 0
+Ending Power Optimization Task | Checksum: e817d896
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1081.574 ; gain = 1.004 ; free physical = 115 ; free virtual = 0
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 28 Warnings, 18 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1081.574 ; gain = 6.004 ; free physical = 115 ; free virtual = 0
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.98 . Memory (MB): peak = 1081.578 ; gain = 0.000 ; free physical = 146 ; free virtual = 0
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.578 ; gain = 0.004 ; free physical = 149 ; free virtual = 0
+INFO: [Coretcl 2-168] The results of DRC are in file /home/rd/vivado-outputs/XADC_3_DEM/XADC.runs/impl_1/System_wrapper_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1081.578 ; gain = 0.000 ; free physical = 130 ; free virtual = 0
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+WARNING: [Drc 23-20] Rule violation (REQP-1724) DSP_Dbus_sign_bit_restriction - System_i/cmpy_0/U0/i_synth/i_synth/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_a.mult1/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [Drc 23-20] Rule violation (REQP-1724) DSP_Dbus_sign_bit_restriction - System_i/cmpy_0/U0/i_synth/i_synth/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 758912c9
+
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.59 . Memory (MB): peak = 1081.578 ; gain = 0.000 ; free physical = 130 ; free virtual = 0
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1081.578 ; gain = 0.000 ; free physical = 129 ; free virtual = 0
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1081.578 ; gain = 0.000 ; free physical = 129 ; free virtual = 0
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 60ed3d65
+
+Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:01 . Memory (MB): peak = 1081.578 ; gain = 0.000 ; free physical = 129 ; free virtual = 0
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Constraints 18-1079] Register System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_reg and System_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg are from the same synchronizer and have the ASYNC_REG property set, but could not be placed into the same slice due to constraints or mismatched control signals on the registers.
+WARNING: [Place 30-568] A LUT 'System_i/ac_interface_0/inst/frame_sync_BUFG_inst_i_1' is driving clock pin of 32 registers. This could lead to large hold time violations. First few involved registers are:
+	System_i/ac_interface_0/inst/rec_parallel_reg[0] {FDRE}
+	System_i/ac_interface_0/inst/rec_parallel_reg[11] {FDRE}
+	System_i/ac_interface_0/inst/rec_parallel_reg[10] {FDRE}
+	System_i/ac_interface_0/inst/rec_parallel_reg[12] {FDRE}
+	System_i/ac_interface_0/inst/rec_parallel_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'System_i/ac_interface_0/inst/bclkDivCounter[7]_i_2' is driving clock pin of 9 registers. This could lead to large hold time violations. First few involved registers are:
+	System_i/ac_interface_0/inst/bclkDivCounter_reg[0] {FDRE}
+	System_i/ac_interface_0/inst/bclkDivCounter_reg[1] {FDRE}
+	System_i/ac_interface_0/inst/bclkDivCounter_reg[2] {FDRE}
+	System_i/ac_interface_0/inst/bclkDivCounter_reg[3] {FDRE}
+	System_i/ac_interface_0/inst/bclkDivCounter_reg[4] {FDRE}
+WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
+	FIXED_IO_mio[53] of IOStandard LVCMOS18
+	FIXED_IO_mio[52] of IOStandard LVCMOS18
+	FIXED_IO_mio[51] of IOStandard LVCMOS18
+	FIXED_IO_mio[50] of IOStandard LVCMOS18
+	FIXED_IO_mio[49] of IOStandard LVCMOS18
+	FIXED_IO_mio[48] of IOStandard LVCMOS18
+	FIXED_IO_mio[47] of IOStandard LVCMOS18
+	FIXED_IO_mio[46] of IOStandard LVCMOS18
+	FIXED_IO_mio[45] of IOStandard LVCMOS18
+	FIXED_IO_mio[44] of IOStandard LVCMOS18
+	FIXED_IO_mio[43] of IOStandard LVCMOS18
+	FIXED_IO_mio[42] of IOStandard LVCMOS18
+	FIXED_IO_mio[41] of IOStandard LVCMOS18
+	FIXED_IO_mio[40] of IOStandard LVCMOS18
+	FIXED_IO_mio[39] of IOStandard LVCMOS18
+	FIXED_IO_mio[38] of IOStandard LVCMOS18
+	FIXED_IO_mio[37] of IOStandard LVCMOS18
+	FIXED_IO_mio[36] of IOStandard LVCMOS18
+	FIXED_IO_mio[35] of IOStandard LVCMOS18
+	FIXED_IO_mio[34] of IOStandard LVCMOS18
+	FIXED_IO_mio[33] of IOStandard LVCMOS18
+	FIXED_IO_mio[32] of IOStandard LVCMOS18
+	FIXED_IO_mio[31] of IOStandard LVCMOS18
+	FIXED_IO_mio[30] of IOStandard LVCMOS18
+	FIXED_IO_mio[29] of IOStandard LVCMOS18
+	FIXED_IO_mio[28] of IOStandard LVCMOS18
+	FIXED_IO_mio[27] of IOStandard LVCMOS18
+	FIXED_IO_mio[26] of IOStandard LVCMOS18
+	FIXED_IO_mio[25] of IOStandard LVCMOS18
+	FIXED_IO_mio[24] of IOStandard LVCMOS18
+	FIXED_IO_mio[23] of IOStandard LVCMOS18
+	FIXED_IO_mio[22] of IOStandard LVCMOS18
+	FIXED_IO_mio[21] of IOStandard LVCMOS18
+	FIXED_IO_mio[20] of IOStandard LVCMOS18
+	FIXED_IO_mio[19] of IOStandard LVCMOS18
+	FIXED_IO_mio[18] of IOStandard LVCMOS18
+	FIXED_IO_mio[17] of IOStandard LVCMOS18
+	FIXED_IO_mio[16] of IOStandard LVCMOS18
+	FIXED_IO_mio[15] of IOStandard LVCMOS18
+	FIXED_IO_mio[14] of IOStandard LVCMOS18
+	FIXED_IO_mio[13] of IOStandard LVCMOS18
+	FIXED_IO_mio[12] of IOStandard LVCMOS18
+	FIXED_IO_mio[11] of IOStandard LVCMOS18
+	FIXED_IO_mio[10] of IOStandard LVCMOS18
+	FIXED_IO_mio[9] of IOStandard LVCMOS18
+	FIXED_IO_mio[8] of IOStandard LVCMOS18
+	FIXED_IO_mio[7] of IOStandard LVCMOS18
+	FIXED_IO_mio[6] of IOStandard LVCMOS33
+	FIXED_IO_mio[5] of IOStandard LVCMOS33
+	FIXED_IO_mio[4] of IOStandard LVCMOS33
+	FIXED_IO_mio[3] of IOStandard LVCMOS33
+	FIXED_IO_mio[2] of IOStandard LVCMOS33
+	FIXED_IO_mio[1] of IOStandard LVCMOS33
+	FIXED_IO_mio[0] of IOStandard LVCMOS18
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 60ed3d65
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 116 ; free virtual = 0
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 60ed3d65
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 116 ; free virtual = 0
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: 69998bc2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 116 ; free virtual = 0
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6bf1c00f
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 116 ; free virtual = 0
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 8d7cf0db
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 113 ; free virtual = 0
+Phase 2.1.2.1 Place Init Design | Checksum: e6cb5616
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 136 ; free virtual = 0
+Phase 2.1.2 Build Placer Netlist Model | Checksum: e6cb5616
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 136 ; free virtual = 0
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: e6cb5616
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 136 ; free virtual = 0
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: e6cb5616
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 136 ; free virtual = 0
+Phase 2.1 Placer Initialization Core | Checksum: e6cb5616
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 137 ; free virtual = 0
+Phase 2 Placer Initialization | Checksum: e6cb5616
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 137 ; free virtual = 0
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: a7d3913f
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:26 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 134 ; free virtual = 0
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: a7d3913f
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:26 . Memory (MB): peak = 1098.574 ; gain = 16.996 ; free physical = 134 ; free virtual = 0
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 10c3cf966
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:41 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 130 ; free virtual = 0
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 687c66d4
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:41 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 130 ; free virtual = 0
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 687c66d4
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:41 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 129 ; free virtual = 0
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: d0a654f4
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:46 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 127 ; free virtual = 0
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: debdc0e8
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:46 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 126 ; free virtual = 0
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 125 ; free virtual = 0
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 125 ; free virtual = 0
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 124 ; free virtual = 0
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 124 ; free virtual = 0
+Phase 4.6 Small Shape Detail Placement | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 124 ; free virtual = 0
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:53 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 123 ; free virtual = 0
+Phase 4 Detail Placement | Checksum: 16ee909c4
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:53 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 123 ; free virtual = 0
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 214e59f50
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 123 ; free virtual = 0
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 214e59f50
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 123 ; free virtual = 0
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:05 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 122 ; free virtual = 0
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.513. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:05 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+Phase 5.2.2 Post Placement Optimization | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:05 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+Phase 5.2 Post Commit Optimization | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:05 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+Phase 5.5 Placer Reporting | Checksum: fcb27a04
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: d3f02b71
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: d3f02b71
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+Ending Placer Task | Checksum: 475c6efc
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:02:06 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 37 Warnings, 18 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:45 ; elapsed = 00:02:13 . Memory (MB): peak = 1102.582 ; gain = 21.004 ; free physical = 121 ; free virtual = 0
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1102.586 ; gain = 0.000 ; free physical = 107 ; free virtual = 0
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1102.586 ; gain = 0.004 ; free physical = 129 ; free virtual = 0
+report_io: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.68 . Memory (MB): peak = 1102.586 ; gain = 0.000 ; free physical = 130 ; free virtual = 0
+report_utilization: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:02 . Memory (MB): peak = 1102.586 ; gain = 0.000 ; free physical = 147 ; free virtual = 0
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1102.586 ; gain = 0.000 ; free physical = 147 ; free virtual = 0
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+WARNING: [Drc 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are:  FIXED_IO_mio[53] of IOStandard LVCMOS18; FIXED_IO_mio[52] of IOStandard LVCMOS18; FIXED_IO_mio[51] of IOStandard LVCMOS18; FIXED_IO_mio[50] of IOStandard LVCMOS18; FIXED_IO_mio[49] of IOStandard LVCMOS18; FIXED_IO_mio[48] of IOStandard LVCMOS18; FIXED_IO_mio[47] of IOStandard LVCMOS18; FIXED_IO_mio[46] of IOStandard LVCMOS18; FIXED_IO_mio[45] of IOStandard LVCMOS18; FIXED_IO_mio[44] of IOStandard LVCMOS18; FIXED_IO_mio[43] of IOStandard LVCMOS18; FIXED_IO_mio[42] of IOStandard LVCMOS18; FIXED_IO_mio[41] of IOStandard LVCMOS18; FIXED_IO_mio[40] of IOStandard LVCMOS18; FIXED_IO_mio[39] of IOStandard LVCMOS18; FIXED_IO_mio[38] of IOStandard LVCMOS18; FIXED_IO_mio[37] of IOStandard LVCMOS18; FIXED_IO_mio[36] of IOStandard LVCMOS18; FIXED_IO_mio[35] of IOStandard LVCMOS18; FIXED_IO_mio[34] of IOStandard LVCMOS18; FIXED_IO_mio[33] of IOStandard LVCMOS18; FIXED_IO_mio[32] of IOStandard LVCMOS18; FIXED_IO_mio[31] of IOStandard LVCMOS18; FIXED_IO_mio[30] of IOStandard LVCMOS18; FIXED_IO_mio[29] of IOStandard LVCMOS18; FIXED_IO_mio[28] of IOStandard LVCMOS18; FIXED_IO_mio[27] of IOStandard LVCMOS18; FIXED_IO_mio[26] of IOStandard LVCMOS18; FIXED_IO_mio[25] of IOStandard LVCMOS18; FIXED_IO_mio[24] of IOStandard LVCMOS18; FIXED_IO_mio[23] of IOStandard LVCMOS18; FIXED_IO_mio[22] of IOStandard LVCMOS18; FIXED_IO_mio[21] of IOStandard LVCMOS18; FIXED_IO_mio[20] of IOStandard LVCMOS18; FIXED_IO_mio[19] of IOStandard LVCMOS18; FIXED_IO_mio[18] of IOStandard LVCMOS18; FIXED_IO_mio[17] of IOStandard LVCMOS18; FIXED_IO_mio[16] of IOStandard LVCMOS18; FIXED_IO_mio[15] of IOStandard LVCMOS18; FIXED_IO_mio[14] of IOStandard LVCMOS18; FIXED_IO_mio[13] of IOStandard LVCMOS18; FIXED_IO_mio[12] of IOStandard LVCMOS18; FIXED_IO_mio[11] of IOStandard LVCMOS18; FIXED_IO_mio[10] of IOStandard LVCMOS18; FIXED_IO_mio[9] of IOStandard LVCMOS18; FIXED_IO_mio[8] of IOStandard LVCMOS18; FIXED_IO_mio[7] of IOStandard LVCMOS18; FIXED_IO_mio[6] of IOStandard LVCMOS33; FIXED_IO_mio[5] of IOStandard LVCMOS33; FIXED_IO_mio[4] of IOStandard LVCMOS33; FIXED_IO_mio[3] of IOStandard LVCMOS33; FIXED_IO_mio[2] of IOStandard LVCMOS33; FIXED_IO_mio[1] of IOStandard LVCMOS33; FIXED_IO_mio[0] of IOStandard LVCMOS18;
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 138251b05
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 1132.582 ; gain = 29.996 ; free physical = 119 ; free virtual = 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 138251b05
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1136.582 ; gain = 33.996 ; free physical = 115 ; free virtual = 0
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 138251b05
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1138.582 ; gain = 35.996 ; free physical = 117 ; free virtual = 0
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 166fde01d
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:24 . Memory (MB): peak = 1159.105 ; gain = 56.520 ; free physical = 159 ; free virtual = 0
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.434 | TNS=-4.82  | WHS=-0.688 | THS=-174   |
+
+Phase 2 Router Initialization | Checksum: 1a4d4578a
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:40 . Memory (MB): peak = 1189.059 ; gain = 86.473 ; free physical = 130 ; free virtual = 0
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 26f738261
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 144 ; free virtual = 0
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 630
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1e2e0fc63
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:02:42 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 121 ; free virtual = 0
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.16  | TNS=-25.1  | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 12c544fcf
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:02:43 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 117 ; free virtual = 0
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 130e1e2d7
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:02:45 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 112 ; free virtual = 0
+Phase 4.1.2 GlobIterForTiming | Checksum: ff675fd9
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:02:55 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 132 ; free virtual = 0
+Phase 4.1 Global Iteration 0 | Checksum: ff675fd9
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:02:55 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 132 ; free virtual = 0
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 100ce85a4
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:03:16 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 100 ; free virtual = 0
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.14  | TNS=-25    | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1984841a5
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:03:16 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 105 ; free virtual = 0
+Phase 4 Rip-up And Reroute | Checksum: 1984841a5
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:03:17 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 105 ; free virtual = 0
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 12c4d6fd4
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:03:24 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 126 ; free virtual = 0
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.14  | TNS=-25    | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5 Delay CleanUp | Checksum: 12c4d6fd4
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:03:25 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 107 ; free virtual = 0
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 12c4d6fd4
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:03:26 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 144 ; free virtual = 0
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 163ad1bfa
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:03:38 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 124 ; free virtual = 0
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.14  | TNS=-25    | WHS=0.018  | THS=0      |
+
+Phase 7 Post Hold Fix | Checksum: 1cfc21fc8
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:03:38 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 124 ; free virtual = 0
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.4703 %
+  Global Horizontal Routing Utilization  = 7.89384 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 51.3514%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+Phase 8 Route finalize | Checksum: 1a4e7e0df
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:03:38 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 127 ; free virtual = 0
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1a4e7e0df
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:03:39 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 127 ; free virtual = 0
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 19d0e4c38
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:03:47 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 115 ; free virtual = 0
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.14  | TNS=-25    | WHS=0.018  | THS=0      |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: 19d0e4c38
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:03:49 . Memory (MB): peak = 1205.059 ; gain = 102.473 ; free physical = 126 ; free virtual = 0
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:04:07 . Memory (MB): peak = 1205.184 ; gain = 102.598 ; free physical = 137 ; free virtual = 0
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 39 Warnings, 18 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:00 ; elapsed = 00:04:16 . Memory (MB): peak = 1205.184 ; gain = 102.598 ; free physical = 133 ; free virtual = 0
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1205.184 ; gain = 0.000 ; free physical = 110 ; free virtual = 0
+write_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:01:08 . Memory (MB): peak = 1205.184 ; gain = 0.000 ; free physical = 135 ; free virtual = 0
+INFO: [Coretcl 2-168] The results of DRC are in file /home/rd/vivado-outputs/XADC_3_DEM/XADC.runs/impl_1/System_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:22 ; elapsed = 00:04:29 . Memory (MB): peak = 1205.184 ; gain = 0.000 ; free physical = 118 ; free virtual = 0
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:18 ; elapsed = 00:03:45 . Memory (MB): peak = 1205.184 ; gain = 0.000 ; free physical = 134 ; free virtual = 0
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:08 ; elapsed = 00:03:38 . Memory (MB): peak = 1205.184 ; gain = 0.000 ; free physical = 125 ; free virtual = 0
+report_route_status: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:07 . Memory (MB): peak = 1205.184 ; gain = 0.000 ; free physical = 125 ; free virtual = 0
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+WARNING: [Drc 23-20] Rule violation (ADEF-911) SIM_DEVICE_arch_mismatch - Cell System_i/xadc_channel_14_0/U0/XADC_inst has the SIM_DEVICE attribute set to ZYNQ, but the current architecture is ZYNQ. The SIM_DEVICE attribute must match the loaded architecture. To correct this issue set the SIM_DEVICE attribute for this cell to 7SERIES.
+WARNING: [Drc 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (DPOP-1) Output pipelining - DSP System_i/fir_compiler_1/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 output P is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net System_i/ac_interface_0/inst/frame_sync is a gated clock net sourced by a combinational pin System_i/ac_interface_0/inst/frame_sync_BUFG_inst_i_1/O, cell System_i/ac_interface_0/inst/frame_sync_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net System_i/ac_interface_0/inst/mclk_internal is a gated clock net sourced by a combinational pin System_i/ac_interface_0/inst/bclkDivCounter[7]_i_2/O, cell System_i/ac_interface_0/inst/bclkDivCounter[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT System_i/ac_interface_0/inst/bclkDivCounter[7]_i_2 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
+    System_i/ac_interface_0/inst/bclkDivCounter_reg[0] {FDRE}
+    System_i/ac_interface_0/inst/bclkDivCounter_reg[1] {FDRE}
+    System_i/ac_interface_0/inst/bclkDivCounter_reg[2] {FDRE}
+    System_i/ac_interface_0/inst/bclkDivCounter_reg[3] {FDRE}
+    System_i/ac_interface_0/inst/bclkDivCounter_reg[4] {FDRE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT System_i/ac_interface_0/inst/frame_sync_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+    System_i/ac_interface_0/inst/rec_parallel_reg[0] {FDRE}
+    System_i/ac_interface_0/inst/rec_parallel_reg[11] {FDRE}
+    System_i/ac_interface_0/inst/rec_parallel_reg[10] {FDRE}
+    System_i/ac_interface_0/inst/rec_parallel_reg[12] {FDRE}
+    System_i/ac_interface_0/inst/rec_parallel_reg[13] {FDRE}
+
+WARNING: [Drc 23-20] Rule violation (REQP-1724) DSP_Dbus_sign_bit_restriction - System_i/cmpy_0/U0/i_synth/i_synth/three_mult_structure.use_dsp.i_dsp48/mult1_preadder_d_plus_a.mult1/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [Drc 23-20] Rule violation (REQP-1724) DSP_Dbus_sign_bit_restriction - System_i/cmpy_0/U0/i_synth/i_synth/three_mult_structure.use_dsp.i_dsp48/mult3_preadder_d_minus_a.mult3/mult/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1: When using the PreAdder and USE_DPORT is TRUE, the D operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/fir_compiler_1/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - System_i/fir_compiler_1/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Drc 23-20] Rule violation (REQP-28) enum_USE_MULT_NONE_connects_CEM_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-28) enum_USE_MULT_NONE_connects_CEM_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-28) enum_USE_MULT_NONE_connects_CEM_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-28) enum_USE_MULT_NONE_connects_CEM_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-28) enum_USE_MULT_NONE_connects_CEM_GND - System_i/fir_compiler_1/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-30) enum_MREG_0_connects_CEM_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-30) enum_MREG_0_connects_CEM_GND - System_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-30) enum_MREG_0_connects_CEM_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-30) enum_MREG_0_connects_CEM_GND - System_i/fir_compiler_0/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [Drc 23-20] Rule violation (REQP-30) enum_MREG_0_connects_CEM_GND - System_i/fir_compiler_1/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 13 Warnings, 20 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.

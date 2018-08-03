@@ -1,0 +1,880 @@
+15:08:07 **** Auto Build of configuration Debug for project system ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:27:0:
+../../system_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../system_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/main.c:43:0: warning: "lcd_LineThree" redefined [enabled by default]
+ #define lcd_LineThree 0x10 // start of line 3 (16x4) //
+ ^
+../src/main.c:41:0: note: this is the location of the previous definition
+ #define lcd_LineThree 0x14 // start of line 3 (20x4) //
+ ^
+../src/main.c:44:0: warning: "lcd_lineFour" redefined [enabled by default]
+ #define lcd_lineFour 0x50 // start of line 4 (16x4) // LCD instructions
+ ^
+../src/main.c:42:0: note: this is the location of the previous definition
+ #define lcd_lineFour 0x54 // start of line 4 (20x4) //
+ ^
+../src/main.c: In function 'main':
+../src/main.c:202:5: warning: implicit declaration of function 'initI2C' [-Wimplicit-function-declaration]
+     initI2C();
+     ^
+../src/main.c:203:5: warning: implicit declaration of function 'InitSSM2603' [-Wimplicit-function-declaration]
+     InitSSM2603();
+     ^
+../src/main.c:215:7: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+       usleep(100000); // 100ms
+       ^
+../src/main.c:220:6: warning: implicit declaration of function 'int_to_int' [-Wimplicit-function-declaration]
+      printf("%i\n",int_to_int(tvalid_data,2));
+      ^
+../src/main.c:227:6: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+      printf("");
+      ^
+../src/main.c:227:6: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+../src/main.c:229:6: warning: implicit declaration of function 'delay_us' [-Wimplicit-function-declaration]
+      delay_us(80); // 40 uS delay (min)
+      ^
+../src/main.c:230:6: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+      lcd_write_string_4d("-- Init done    ");
+      ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:286:14: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int32_t' [-Wformat=]
+              printf("%i",sinus_data);
+              ^
+../src/main.c:286:14: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int32_t' [-Wformat=]
+../src/main.c:301:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Output volume       ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:306:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("<4 ; 6> code        ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:314:16: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                lcd_write_string_4d("Tune frequency    ");
+                ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:319:16: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                lcd_write_string_4d("<4 ; 6> code      ");
+                ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:328:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Enter Volume        ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:331:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("                    ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:340:16: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                lcd_write_string_4d("Enter Frequency     ");
+                ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:343:16: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                lcd_write_string_4d("                    ");
+                ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:355:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("1");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:361:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("1");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:367:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("1 FULL");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:375:20: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                    lcd_write_string_4d("1");
+                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:381:17: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                 lcd_write_string_4d("1");
+                 ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:387:17: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                 lcd_write_string_4d("1.");
+                 ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:393:17: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                 lcd_write_string_4d("1 FULL");
+                 ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:405:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("2");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:411:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("2");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:417:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("2 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:425:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("2");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:431:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("2");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:437:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("2.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:443:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("2 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:454:36: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                    lcd_write_string_4d("3");
+                                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:460:36: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                    lcd_write_string_4d("3");
+                                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:466:36: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                    lcd_write_string_4d("3 FULL");
+                                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:474:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("3");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:480:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("3");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:486:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("3.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:492:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("3 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:505:36: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                    lcd_write_string_4d("4");
+                                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:511:36: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                    lcd_write_string_4d("4");
+                                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:517:36: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                    lcd_write_string_4d("4 FULL");
+                                    ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:525:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("4");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:531:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("4");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:537:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("4.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:543:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("4 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:552:13: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int32_t' [-Wformat=]
+             printf("%i\n",sinus_data);
+             ^
+../src/main.c:552:13: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int32_t' [-Wformat=]
+../src/main.c:557:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Volume --           ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:561:13: warning: implicit declaration of function 'PrintLCDVar' [-Wimplicit-function-declaration]
+             PrintLCDVar(sinus_data);
+             ^
+../src/main.c:562:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("x                   ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:573:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Frequency -- khz     ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:580:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("0.");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:584:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("                ");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:591:17: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                 lcd_write_string_4d(".");
+                 ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:595:18: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                  lcd_write_string_4d("0");
+                  ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:599:17: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                 lcd_write_string_4d("                ");
+                 ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:612:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("Tune step --         ");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:618:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d(" Hz                  ");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:628:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("5");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:634:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("5");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:640:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("5 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:648:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("5");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:654:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("5");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:660:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("5.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:666:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("5 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:679:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("6");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:685:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("6");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:691:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("6 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:699:43: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                           lcd_write_string_4d("6");
+                                           ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:705:40: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                        lcd_write_string_4d("6");
+                                        ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:711:40: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                        lcd_write_string_4d("6.");
+                                        ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:717:40: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                                        lcd_write_string_4d("6 FULL");
+                                        ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:726:13: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int32_t' [-Wformat=]
+             printf("%i\n",sinus_data);
+             ^
+../src/main.c:726:13: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int32_t' [-Wformat=]
+../src/main.c:729:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Volume ++           ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:734:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("x                   ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:743:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Frequency ++ khz    ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:750:21: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                     lcd_write_string_4d("0.");
+                     ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:754:21: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                     lcd_write_string_4d("                ");
+                     ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:761:21: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                     lcd_write_string_4d(".");
+                     ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:765:24: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                        lcd_write_string_4d("0");
+                        ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:769:21: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                     lcd_write_string_4d("                ");
+                     ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:781:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Tune step ++         ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:787:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d(" Hz                  ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:797:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("7");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:803:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("7");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:809:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("7 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:817:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("7");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:823:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("7");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:829:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("7.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:835:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("7 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:846:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("8");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:852:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("8");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:858:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("8 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:866:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("8");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:872:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("8");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:878:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("8.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:884:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("8 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:895:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("9");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:901:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("9");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:907:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("9 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:915:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("9");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:921:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("9");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:927:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("9.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:933:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("9 FULL");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:944:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("0");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:950:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("0");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:956:25: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                         lcd_write_string_4d("0 FULL");
+                         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:964:31: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                               lcd_write_string_4d("0");
+                               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:970:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("0");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:976:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("0.");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:982:28: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                            lcd_write_string_4d("0 FULL    ");
+                            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:998:18: warning: statement with no effect [-Wunused-value]
+                  setposition==4;
+                  ^
+../src/main.c:1002:17: warning: statement with no effect [-Wunused-value]
+                 setposition==4;
+                 ^
+../src/main.c:1026:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d("Tune step ");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1030:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d(" Hz      ");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1034:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d("<4 ; 6>           ");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1069:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Mode                ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1073:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Audio NF             ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1085:14: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+              lcd_write_string_4d("Mode                ");
+              ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1089:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d("Demodulate all      ");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1102:16: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                lcd_write_string_4d("Mode                ");
+                ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1106:16: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                lcd_write_string_4d("Tune frequency      ");
+                ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1121:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d("AM  ");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1123:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("NF              ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1126:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Dem. all        ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1129:13: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+             lcd_write_string_4d("Tune            ");
+             ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1137:17: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+                 lcd_write_string_4d("0.");
+                 ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1141:15: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+               lcd_write_string_4d(" kHz ");
+               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1148:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d(".");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1152:15: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+               lcd_write_string_4d("0");
+               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1155:15: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+               lcd_write_string_4d(" kHz ");
+               ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1159:12: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+            lcd_write_string_4d("x     ");
+            ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c: At top level:
+../src/main.c:1274:6: warning: conflicting types for 'PrintLCDVar' [enabled by default]
+ void PrintLCDVar(int number) {
+      ^
+../src/main.c:561:13: note: previous implicit declaration of 'PrintLCDVar' was here
+             PrintLCDVar(sinus_data);
+             ^
+../src/main.c: In function 'PrintLCDVar':
+../src/main.c:1283:16: warning: initialization makes integer from pointer without a cast [enabled by default]
+     int nmar = calloc(n, sizeof(char)) + 1;
+                ^
+../src/main.c:1293:6: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+      lcd_write_string_4d("0");
+      ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1296:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("1");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1299:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("2");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1302:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("3");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1305:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("4");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1308:9: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+         lcd_write_string_4d("5");
+         ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1311:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("6");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1314:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("7");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1317:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("8");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1320:10: warning: pointer targets in passing argument 1 of 'lcd_write_string_4d' differ in signedness [-Wpointer-sign]
+          lcd_write_string_4d("9");
+          ^
+../src/main.c:112:6: note: expected 'uint8_t *' but argument is of type 'char *'
+ void lcd_write_string_4d(uint8_t *);
+      ^
+../src/main.c:1284:9: warning: unused variable 'npos' [-Wunused-variable]
+     int npos = nmar - 1;
+         ^
+../src/main.c: At top level:
+../src/main.c:1360:6: warning: conflicting types for 'InitSSM2603' [enabled by default]
+ void InitSSM2603(void)
+      ^
+../src/main.c:203:5: note: previous implicit declaration of 'InitSSM2603' was here
+     InitSSM2603();
+     ^
+../src/main.c:1387:6: warning: conflicting types for 'delay_us' [enabled by default]
+ void delay_us(Xuint32 time)
+      ^
+../src/main.c:229:6: note: previous implicit declaration of 'delay_us' was here
+      delay_us(80); // 40 uS delay (min)
+      ^
+../src/main.c: In function 'int_to_int':
+../src/main.c:1378:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/main.c
+ 
+Building target: system.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "system.elf"  ./src/global.o ./src/lcd.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: system.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size system.elf  |tee "system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100268	   2536	  56748	 159552	  26f40	system.elf
+Finished building: system.elf.size
+ 
+
+15:08:08 Build Finished (took 1s.678ms)
+

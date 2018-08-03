@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Nov  1 19:28:49 2016
+# Process ID: 10925
+# Log file: /home/rd/Vivado/XADC_3/XADC.runs/impl_1/System_wrapper.vdi
+# Journal file: /home/rd/Vivado/XADC_3/XADC.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source -notrace "/opt/Xilinx/Vivado/2014.4/scripts/init.tcl"
+source System_wrapper.tcl -notrace

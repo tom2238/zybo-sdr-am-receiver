@@ -1,0 +1,44 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
+| Date         : Sat Oct  8 14:47:17 2016
+| Host         : delld610 running 32-bit Linux Mint 17.2 Rafaela
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_axi_fifo_mm_s_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_axi_fifo_mm_s_0_0 (xilinx.com:ip:axi_fifo_mm_s:4.1) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.3.1 (win64) Build 1034051 Fri Oct  3 17:18:25 MDT 2014
+| Date         : Thu Nov 06 22:04:57 2014
+| Host         : Daniel-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_axi_fifo_mm_s_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_axi_fifo_mm_s_0_0 from xilinx.com:ip:axi_fifo_mm_s:4.0 (Rev. 5) to xilinx.com:ip:axi_fifo_mm_s:4.1
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot remove parameter C_FAMILY : there is no parameter called C_FAMILY in axi_fifo_mm_s_v4_0
+Set parameter C_AXI4_BASEADDR to value 0x80001000
+Set parameter C_AXI4_HIGHADDR to value 0x80002FFF
+

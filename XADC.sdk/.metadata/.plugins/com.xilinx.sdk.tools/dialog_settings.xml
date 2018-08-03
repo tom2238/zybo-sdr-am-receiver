@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="System_wrapper_hw_platform_0-offSet"/>
+	<item value="true" key="System_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="qspi_single" key="System_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="System_wrapper_hw_platform_0-blankCheck"/>
+	<item value="/home/rd/vivado-outputs/am_demmod_5_OK3.mcs" key="System_wrapper_hw_platform_0-imgFile"/>
+	<item value="" key="System_wrapper_hw_platform_0-fsblFile"/>
+	<item value="Local" key="System_wrapper_hw_platform_0-target"/>
+</section>

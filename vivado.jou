@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Sun Sep 07 09:01:29 2014
+# Process ID: 7036
+# Log file: C:/Users/Daniel/Desktop/XADC/vivado.log
+# Journal file: C:/Users/Daniel/Desktop/XADC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Daniel\Desktop\XADC\XADC.xpr}

@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/fsbl/Debug/fsbl.elf
+	/home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/System_wrapper_hw_platform_0/System_wrapper.bit
+	/home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/system/Debug/system.elf
+}

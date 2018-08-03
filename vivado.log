@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Sun Sep 07 09:01:29 2014
+# Process ID: 7036
+# Log file: C:/Users/Daniel/Desktop/XADC/vivado.log
+# Journal file: C:/Users/Daniel/Desktop/XADC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Daniel\Desktop\XADC\XADC.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at R:/Vivado20141/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at R:/Vivado20141/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at R:/Vivado20141/Vivado/2014.1/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at R:/Vivado20141/Vivado/2014.1/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-231] Project 'XADC.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'R:/Vivado20141/Vivado/2014.1/data/ip'.
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP System_processing_system7_0_0 and its definition xilinx.com:ip:processing_system7:5.4
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP System_xadc_wiz_0_0 and its definition xilinx.com:ip:xadc_wiz:3.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP System_processing_system7_0_axi_periph_0 and its definition xilinx.com:ip:axi_interconnect:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP System_rst_processing_system7_0_100M_0 and its definition xilinx.com:ip:proc_sys_reset:5.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP System_xbar_0 and its definition xilinx.com:ip:axi_crossbar:2.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP System_auto_pc_0 and its definition xilinx.com:ip:axi_protocol_converter:2.1
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'System.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 874.715 ; gain = 114.355
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 07 09:02:24 2014...

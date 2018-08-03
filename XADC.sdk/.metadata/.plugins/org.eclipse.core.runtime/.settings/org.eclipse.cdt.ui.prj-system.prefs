@@ -1,0 +1,3 @@
+buildConsole/keepLog=true
+buildConsole/logLocation=/home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/.metadata/.plugins/org.eclipse.cdt.ui/system.build.log
+eclipse.preferences.version=1

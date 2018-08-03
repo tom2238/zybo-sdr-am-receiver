@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# 
+# Start of session at: Mon Apr  3 02:00:16 2017
+# Process ID: 12347
+# Log file: /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/webtalk.log
+# Journal file: /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

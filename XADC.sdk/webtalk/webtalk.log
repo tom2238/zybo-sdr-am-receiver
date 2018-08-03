@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# 
+# Start of session at: Mon Apr  3 02:00:16 2017
+# Process ID: 12347
+# Log file: /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/webtalk.log
+# Journal file: /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+WARNING: [Common 17-204] Your XILINX environment variable is undefined. You will not be able to run Synthesis and Implementation using ISE based strategies, or import ngc netlists. Please set up your XILINX environment to get full functionality.
+source sdk_webtalk.tcl
+# webtalk_init -webtalk_dir /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "Mon Apr 3 02:00:11 2017" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key product_version -value "SDK v2014.4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key build_version -value "2014.4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_platform -value "i386" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key registration_id -value "211213144_0_0_521" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key tool_flow -value "SDK" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key beta -value "false" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key route_design -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_family -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "j4mi0649dfi2biq6r1781u4avn" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2014.4_55" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "55" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_name -value "LinuxMint" -context "user_environment"
+# webtalk_add_data -client project -key os_release -value "Linux Mint 17.2 Rafaela" -context "user_environment"
+# webtalk_add_data -client project -key cpu_name -value "Intel(R) Pentium(R) M processor 2.00GHz" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "2000.000 MHz" -context "user_environment"
+# webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
+# webtalk_add_data -client project -key system_ram -value "2.000 GB" -context "user_environment"
+# webtalk_register_client -client sdk
+# webtalk_add_data -client sdk -key uid -value "1491175548000" -context "sdk\\\\application/1491175548000"
+# webtalk_add_data -client sdk -key hwid -value "1490650902000" -context "sdk\\\\application/1491175548000"
+# webtalk_add_data -client sdk -key bspid -value "1490650995000" -context "sdk\\\\application/1491175548000"
+# webtalk_add_data -client sdk -key newbsp -value "false" -context "sdk\\\\application/1491175548000"
+# webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\application/1491175548000"
+# webtalk_add_data -client sdk -key apptemplate -value "zynq_fsbl" -context "sdk\\\\application/1491175548000"
+# webtalk_transmit -clientid 2046143862 -regid "211213144_0_0_521" -xml /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/usage_statistics_ext_sdk.xml -html /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+
+    while executing
+"webtalk_transmit -clientid 2046143862 -regid "211213144_0_0_521" -xml /home/rd/vivado-outputs/XADC_3_DEM/XADC.sdk/webtalk/usage_statistics_ext_sdk.xml..."
+    (file "sdk_webtalk.tcl" line 31)
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  3 02:00:16 2017...
